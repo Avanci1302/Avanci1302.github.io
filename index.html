@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Elle Me – Prêt-à-Porter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -13,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
 
@@ -21,7 +22,7 @@
             padding: 20px;
         }
 
-        img {
+        .logo {
             width: 140px;
             margin-bottom: 20px;
         }
@@ -36,17 +37,64 @@
             font-size: 14px;
             color: #555;
             letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 14px 25px;
+            width: 260px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c9a14a; /* ذهبي */
+            color: #000;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5d;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <img src="354215283_728933002571824_8916090516859816871_n.jpg" alt="Elle Me Logo">
-        <h1>ELLE ME</h1>
-        <p>Élégance · Force · Identité</p>
-    </div>
+<div class="container">
+    <img src="logo.png" alt="Elle Me Logo" class="logo">
+
+    <h1>ELLE ME</h1>
+    <p>Prêt-à-Porter</p>
+
+    <a class="btn" href="https://maps.app.goo.gl/7ipfSZVBwmadgzPAA" target="_blank">
+        📍 Localisation
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/elle__me12" target="_blank">
+        📷 Instagram
+    </a>
+
+    <a class="btn" href="https://www.facebook.com/share/185hExdW2h/" target="_blank">
+        📘 Facebook
+    </a>
+
+    <a class="btn whatsapp" href="https://wa.me/21627922014" target="_blank">
+        💬 WhatsApp
+    </a>
+</div>
 
 </body>
 </html>
